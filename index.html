@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,22 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <!-- Custom CSS -->
     <style>
         :root {
             --primary-color: #141414;
             --secondary-color: #0c0c0c;
-            --accent-color: #E50914; /* Garo Red */
+            --accent-color: #E50914;
+            /* Garo Red */
             --text-color: #ffffff;
             --text-muted-color: #a0a0a0;
         }
@@ -39,7 +41,7 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             transition: background-color 0.3s;
         }
-        
+
         .navbar .navbar-brand {
             font-weight: 700;
             font-size: 1.8rem;
@@ -52,14 +54,15 @@
             transition: color 0.3s;
         }
 
-        .navbar .nav-link:hover, .navbar .nav-link.active {
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
             color: var(--text-color);
         }
 
         /* --- Hero Section --- */
         .hero-section {
             height: 60vh;
-            background: linear-gradient(to right, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.2)), url('https://placehold.co/1920x1080/222/FFF?text=Featured+Movie') no-repeat center center;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.2)), url('https://placehold.co/1920x1080/222/FFF?text=Featured+Movie') no-repeat center center;
             background-size: cover;
             display: flex;
             align-items: center;
@@ -68,7 +71,7 @@
         .hero-content h1 {
             font-size: 3.5rem;
             font-weight: 700;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
 
         .hero-content p {
@@ -76,7 +79,7 @@
             font-size: 1.1rem;
             color: var(--text-muted-color);
         }
-        
+
         .btn-custom-red {
             background-color: var(--accent-color);
             color: var(--text-color);
@@ -121,18 +124,20 @@
         .movie-card img {
             width: 100%;
             height: auto;
-            aspect-ratio: 2/3; /* Standard poster aspect ratio */
+            aspect-ratio: 2/3;
+            /* Standard poster aspect ratio */
             object-fit: cover;
         }
-        
+
         .movie-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent 60%);
-            opacity: 1; /* Always visible for title */
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 60%);
+            opacity: 1;
+            /* Always visible for title */
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -145,7 +150,7 @@
             left: 50%;
             transform: translate(-50%, -50%) scale(0.8);
             font-size: 4rem;
-            color: rgba(255,255,255,0.8);
+            color: rgba(255, 255, 255, 0.8);
             opacity: 0;
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
@@ -154,7 +159,7 @@
             opacity: 1;
             transform: translate(-50%, -50%) scale(1);
         }
-        
+
         .movie-title {
             font-size: 0.9rem;
             font-weight: 600;
@@ -166,13 +171,13 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        
+
         /* --- Footer --- */
         .footer {
             background-color: var(--secondary-color);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .footer .social-icons a {
             color: var(--text-muted-color);
             font-size: 1.5rem;
@@ -183,9 +188,9 @@
         .footer .social-icons a:hover {
             color: var(--accent-color);
         }
-
     </style>
 </head>
+
 <body>
 
     <!-- Header Section -->
@@ -193,7 +198,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">BD Virul Hub</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -205,14 +211,15 @@
                             <a class="nav-link" href="#">Bangla X</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Viral Link</a>
+                            <a class="nav-link" href="#">Best X</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Best X</a>
+                            <a class="nav-link" href="#">Viral Link</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2 bg-dark text-white border-secondary" type="search" placeholder="অনুসন্ধান..." aria-label="Search">
+                        <input class="form-control me-2 bg-dark text-white border-secondary" type="search"
+                            placeholder="অনুসন্ধান..." aria-label="Search">
                         <button class="btn btn-outline-danger" type="submit">সার্চ</button>
                     </form>
                 </div>
@@ -238,7 +245,7 @@
             <h2 class="section-title">সর্বশেষ মুক্তিপ্রাপ্ত</h2>
             <!-- Movie Grid: 6 columns on large screens, 4 on medium, 2 on small -->
             <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 g-lg-4">
-                
+
                 <!-- Movie Card 1 -->
                 <div class="col">
                     <div class="movie-card">
@@ -247,14 +254,14 @@
                     </div>
                     <h6 class="movie-title">সিনেমা এক</h6>
                 </div>
-                
+
                 <!-- Movie Card 2 -->
                 <div class="col">
                     <div class="movie-card">
                         <img src="https://placehold.co/300x450/444/FFF?text=Movie+2" alt="Movie Poster">
                         <div class="play-icon"><i class="fas fa-play-circle"></i></div>
                     </div>
-                     <h6 class="movie-title">সিনেমা দুই</h6>
+                    <h6 class="movie-title">সিনেমা দুই</h6>
                 </div>
 
                 <!-- Movie Card 3 -->
@@ -263,7 +270,7 @@
                         <img src="https://placehold.co/300x450/555/FFF?text=Movie+3" alt="Movie Poster">
                         <div class="play-icon"><i class="fas fa-play-circle"></i></div>
                     </div>
-                     <h6 class="movie-title">টাইটেল থ্রি</h6>
+                    <h6 class="movie-title">টাইটেল থ্রি</h6>
                 </div>
 
                 <!-- Movie Card 4 -->
@@ -272,7 +279,7 @@
                         <img src="https://placehold.co/300x450/666/FFF?text=Movie+4" alt="Movie Poster">
                         <div class="play-icon"><i class="fas fa-play-circle"></i></div>
                     </div>
-                     <h6 class="movie-title">মুভির নাম চার</h6>
+                    <h6 class="movie-title">মুভির নাম চার</h6>
                 </div>
 
                 <!-- Movie Card 5 -->
@@ -281,7 +288,7 @@
                         <img src="https://placehold.co/300x450/777/FFF?text=Movie+5" alt="Movie Poster">
                         <div class="play-icon"><i class="fas fa-play-circle"></i></div>
                     </div>
-                     <h6 class="movie-title">চলচিত্র পাঁচ</h6>
+                    <h6 class="movie-title">চলচিত্র পাঁচ</h6>
                 </div>
 
                 <!-- Movie Card 6 -->
@@ -290,7 +297,7 @@
                         <img src="https://placehold.co/300x450/888/FFF?text=Movie+6" alt="Movie Poster">
                         <div class="play-icon"><i class="fas fa-play-circle"></i></div>
                     </div>
-                     <h6 class="movie-title">সিনেমা ছয়</h6>
+                    <h6 class="movie-title">সিনেমা ছয়</h6>
                 </div>
             </div>
         </section>
@@ -299,36 +306,96 @@
         <section>
             <h2 class="section-title">জনপ্রিয় টিভি সিরিজ</h2>
             <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 g-lg-4">
-                
+
                 <!-- Series Card 1 -->
                 <div class="col">
                     <div class="movie-card">
                         <img src="https://placehold.co/300x450/522/FFF?text=Series+1" alt="Series Poster">
                         <div class="play-icon"><i class="fas fa-play-circle"></i></div>
                     </div>
-                     <h6 class="movie-title">ডার্ক ম্যাটার</h6>
+                    <h6 class="movie-title">ডার্ক ম্যাটার</h6>
                 </div>
-                
+
                 <!-- Series Card 2 -->
                 <div class="col">
                     <div class="movie-card">
                         <img src="https://placehold.co/300x450/252/FFF?text=Series+2" alt="Series Poster">
                         <div class="play-icon"><i class="fas fa-play-circle"></i></div>
                     </div>
-                     <h6 class="movie-title">দ্য ভয়েড</h6>
+                    <h6 class="movie-title">দ্য ভয়েড</h6>
                 </div>
 
                 <!-- ... Add 10 more cards to fill two rows ... -->
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/225/FFF?text=Series+3" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">টাইম লুপ</h6> </div>
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/525/FFF?text=Series+4" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">ইকোস</h6> </div>
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/552/FFF?text=Series+5" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">অরবিট</h6> </div>
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/255/FFF?text=Series+6" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">নেক্সাস</h6> </div>
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/424/FFF?text=Series+7" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">রিফট</h6> </div>
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/442/FFF?text=Series+8" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">ক্রনিকলস</h6> </div>
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/244/FFF?text=Series+9" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">স্টার ফল</h6> </div>
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/422/FFF?text=Series+10" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">গ্যালাক্সি এজ</h6> </div>
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/333/FFF?text=Series+11" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">প্যারালাল</h6> </div>
-                <div class="col"> <div class="movie-card"> <img src="https://placehold.co/300x450/444/FFF?text=Series+12" alt="Series Poster"> <div class="play-icon"><i class="fas fa-play-circle"></i></div> </div> <h6 class="movie-title">দ্য কোড</h6> </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/225/FFF?text=Series+3"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">টাইম লুপ</h6>
+                </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/525/FFF?text=Series+4"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">ইকোস</h6>
+                </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/552/FFF?text=Series+5"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">অরবিট</h6>
+                </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/255/FFF?text=Series+6"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">নেক্সাস</h6>
+                </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/424/FFF?text=Series+7"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">রিফট</h6>
+                </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/442/FFF?text=Series+8"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">ক্রনিকলস</h6>
+                </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/244/FFF?text=Series+9"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">স্টার ফল</h6>
+                </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/422/FFF?text=Series+10"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">গ্যালাক্সি এজ</h6>
+                </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/333/FFF?text=Series+11"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">প্যারালাল</h6>
+                </div>
+                <div class="col">
+                    <div class="movie-card"> <img src="https://placehold.co/300x450/444/FFF?text=Series+12"
+                            alt="Series Poster">
+                        <div class="play-icon"><i class="fas fa-play-circle"></i></div>
+                    </div>
+                    <h6 class="movie-title">দ্য কোড</h6>
+                </div>
 
             </div>
         </section>
@@ -341,19 +408,23 @@
                 <div class="col-md-3 mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4" style="color: var(--accent-color);">BD Virul Hub</h6>
                     <p style="color: var(--text-muted-color);">
-                        আপনার বিনোদনের সেরা অভিজ্ঞতা দিতে আমরা প্রতিশ্রুতিবদ্ধ। নতুন নতুন মুভি এবং সিরিজের জন্য আমাদের সাথেই থাকুন।
+                        আপনার বিনোদনের সেরা অভিজ্ঞতা দিতে আমরা প্রতিশ্রুতিবদ্ধ। নতুন নতুন মুভি এবং সিরিজের জন্য আমাদের
+                        সাথেই থাকুন।
                     </p>
                 </div>
                 <div class="col-md-2 mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">লিঙ্কস</h6>
-                    <p><a href="#!" class="text-decoration-none" style="color: var(--text-muted-color);">আমাদের সম্পর্কে</a></p>
+                    <p><a href="#!" class="text-decoration-none" style="color: var(--text-muted-color);">আমাদের
+                            সম্পর্কে</a></p>
                     <p><a href="#!" class="text-decoration-none" style="color: var(--text-muted-color);">যোগাযোগ</a></p>
-                    <p><a href="#!" class="text-decoration-none" style="color: var(--text-muted-color);">শর্তাবলী</a></p>
+                    <p><a href="#!" class="text-decoration-none" style="color: var(--text-muted-color);">শর্তাবলী</a>
+                    </p>
                 </div>
                 <div class="col-md-4 mx-auto mb-md-0 mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">যোগাযোগ</h6>
                     <p style="color: var(--text-muted-color);"><i class="fas fa-home me-3"></i> ঢাকা, বাংলাদেশ</p>
-                    <p style="color: var(--text-muted-color);"><i class="fas fa-envelope me-3"></i> info@BD Virul Hub.com</p>
+                    <p style="color: var(--text-muted-color);"><i class="fas fa-envelope me-3"></i> info@BD Virul
+                        Hub.com</p>
                     <p style="color: var(--text-muted-color);"><i class="fas fa-phone me-3"></i> +880 123 4567 890</p>
                 </div>
             </div>
@@ -374,5 +445,5 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
 
+</html>
